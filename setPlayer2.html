@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+<meta charset="utf-8">
+<title>Configurar Jugadores</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--MOBILE-->
+</head>
+
+<body>
+
+    <div class="principalStructure">
+
+        <div class="playerPicture">
+            <h1>Jugador 2</h1>
+            <div class="modifyImage">
+                <img src="img/userDefault.svg" class="iconUsers" id="pictureP2">
+                <button id="imgPlayer2" class="centerAndBlock">Cambiar foto</button>
+            </div>
+        </div>
+                
+        <div id="formPlayer2" class="playerForm">
+            <form id="divForm2" method="Post" class="divStructure">
+                
+                <label for="playerName">Nombre</label>
+                <input type="text" id="nameP2"/>
+                
+                <label for="playerNickname">Nickname</label>
+                <input type="text" id="nickNameP2"/>
+                
+                <input type="button" name="enviar" value="Siguiente" onclick="generatePlayer2();" class="buttons"/><br>
+                        
+                
+            </form>
+        </div>
+                
+    </div> 
+
+    <div id="txt2"></div>
+
+  <!--<script type="text/javascript" src="cordova.js"></script>-->
+  <script type="text/javascript" src="js/index.js"></script>
+  
+</body>
+</html>

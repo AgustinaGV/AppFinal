@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memotest</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Staatliches&display=swap" rel="stylesheet">
+</head>
+<body id="body" onload="startGame()">
+
+    <audio id="flipCard">
+        <source src="sounds/card_flip.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rightChoice">
+        <source src="sounds/scoreFour.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="playerOneWins">
+        <source src="sounds/playerOneWins.wav" type="audio/mpeg">
+    </audio>
+    <audio id="playerTwoWins">
+        <source src="sounds/playerTwoWins.wav" type="audio/mpeg">
+    </audio>
+
+    <h1>MEMOTEST</h1>
+
+    <section id="options">
+        <div>
+            <label>Tablero:</label>
+            <select id="pick" onchange="createTable()">
+                    <option value="4" selected>4 x 4</option>
+                    <option value="5">5 x 5</option>
+                    <option value="6">6 x 6</option>
+            </select>
+        </div>
+        <div>
+            <button id="soundControl" onclick="soundControl()">Desactivar sonido</button>
+        </div>
+        <div>
+            <button id="reset" onclick="reset()" class="buttons">Reiniciar</button>
+        </div>
+    </section>
+
+    <section id="players">
+        <div>
+            <p id="1" class="player">Jugador 1</p>
+            <p id="matchesOne" class="matchesInfo"></p>
+        </div>
+        <div>
+            <p id="2">Jugador 2</p>
+            <p id="matchesTwo" class="matchesInfo"></p>
+        </div>
+    </section>
+          
+    <div id="container">
+    </div>
+
+
+    
+ 
+    
+    
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

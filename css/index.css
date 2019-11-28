@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------------------------- FIN RESET CSS ----------------------------------------------*/
+
+
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+/* 
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);  make transparent link selection, adjust last value opacity 0 to 1.0 
+}
+
+
+
+body {
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none;             
+    -webkit-user-select: none;                  
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+    text-transform:uppercase;
+    width:100%;
+}
+*/
+
+/* 
+
+Landscape layout (with min-width) 
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  
+        margin:-90px 0px 0px -198px;  
+    }
+}
+
+*/
+
+/*
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+*/
+
+/*------------------------------------------------------------------------------*/
+/* MY STYLES*/
+
+/*----------------------- IDs -----------------------*/
+#myImage {
+
+    width: 100%;
+}
+
+#overlayWelcome {
+
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+}
+
+#welcome {
+
+    padding: 1em 0.3em 1em 0.3em;
+    border-radius: 15px;
+    left: 2vh;
+    z-index: 1;
+    width: 90%;
+    background-color: rgb(36, 142, 150);
+    position: absolute;
+    top: 30vh;
+    font-size: 0.8em;
+    z-index: 2;
+}
+
+#welcome h1 {
+
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#welcome p {
+
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 1.5em;
+    padding-top: 1em;
+    font-weight: 300;
+}
+
+#welcome button {
+
+    border-radius: 7px;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    border: none;
+
+}
+
+#welcome button a {
+
+    text-decoration:none;
+    color: black;
+}
+
+#headerGame {
+
+    padding-top: 2em;
+}
+
+#headerGame section {
+
+    padding-top: 2em;
+}
+
+#headerGame img {
+
+    width: 50%;
+    padding-bottom: 1em;
+
+}
+
+#headerGame h1 {
+
+    font-size: 1em;
+    font-weight: 900;
+}
+
+
+#games button {
+
+    border-radius: 5px;
+    margin: bottom;
+    padding: 0.7em;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5vh;
+    border: none;
+}
+
+#games button a {
+
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#settings {
+
+    border-radius: 15px;
+    margin: bottom;
+    padding: 0.5em;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5vh;
+    border: none;
+    margin-top: 4vh;
+
+}
+
+#settings a img {
+
+    width:55%;
+
+}
+
+
+
+/*----------------------- CLASES -----------------------*/
+
+.iconUsers {
+
+    width: 10em;
+}
+
+.principalStructure { 
+
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.divStructure {
+
+    padding-top: 5vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.divStructure input[type=text] {
+
+    padding-top: 0.5em;
+    opacity: 0.2;
+    width: 85%;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-bottom: 0.7em;
+    margin-top: 0.3em;
+}
+
+.divStructure label {
+
+    font-weight: 500;
+}
+
+.principalStructure h1 {
+
+    text-transform: uppercase;
+    padding: 7vh 0vh 5vh 0vh;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.principalStructure img {
+
+    margin: 0 auto;
+    width: 50%;
+}
+
+.centerAndBlock {
+
+    border-radius: 7px;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.buttons {
+
+    text-transform: uppercase;
+    margin-top: 7vh;
+    width: 80%;
+    font-weight: 700;
+    padding: 1.5vh;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 1em;
+}
+
+.modifyImage {
+
+    position:relative;
+}
+
+.modifyImage button {
+
+    left: 12vh;
+    position: absolute;
+    top: 22vh;
+}
+
+.playerPicture {
+
+    height: 45%;
+}
+
+.playerForm {
+
+    height: 50%;
+}
+
+
+/*----------------------- GENERALES -----------------------*/
+
+/*app = body, creo este div contenedor para no tocar al body*/
+body {
+    position:relative;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    z-index:0;
+}
+
+header {
+
+    width: 90%;
+    margin:0 auto;
+    min-height: 45%;
+}
+
+main {
+
+    min-height: 45%;
+    margin:0 auto;
+    padding-top: 2vh;
+    width:90%;
+}
+
+
+
+footer {
+
+    font-size: 0.5em;
+    font-weight: 300;
+    min-height: 10%;
+    margin: 0 auto;
+    width:90%;
+}

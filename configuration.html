@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+<meta charset="utf-8">
+<title>Configuración</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--MOBILE-->
+</head>
+
+<body>
+
+    <div class="principalStructure">
+        <div>
+            <button><a href="index.html">Volver</a></button>
+            <h1> Configuración</h1>
+        </div>
+
+        <section id="editPlayers">
+            <span>Jugadores</span>
+            <div><span><a href="setPlayer1.html">Editar Jugador 1</a></span></div>
+            <div><span>><a href="setPlayer2.html">Editar Jugador 2</a></span></div>
+            <div onclick="deletePlayers()"><span>Borrar jugadores</span></div>
+        </section>
+
+        <section id="scores">
+            <span>Puntajes</span>
+            <div><span>Ver puntajes</span></div>
+            <div><span>Reestablecer puntajes</span></div>
+        </section>
+
+        <section id="deleteAll">
+            <div><span>Reestablecer juego</span></div>
+        </section>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
