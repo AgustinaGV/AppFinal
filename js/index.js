@@ -41,6 +41,26 @@
     scoreSopaDeLetras: 0
  };
 
+ let tatetiStorage = {
+
+    board : "",
+    gamesO : 0,
+    gamesX : 0,
+    turn : false,
+    moves : 0,
+
+ };
+
+ let memotestStorage = {
+
+
+ }
+
+ let sopadeLetrasStorage = {
+
+
+ }
+ 
  /*------------------------FUNCIONES DE WELCOME------------------------*/
 
  /*------------------------FUNCIONES DE SETPLAYERS------------------------*/

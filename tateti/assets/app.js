@@ -23,15 +23,15 @@ if (typeof myStorage !== 'undefined') {
         console.log("turn: " + turn);
         moves = JSON.parse(myStorage.getItem('Moves'));
         console.log("moves: " + moves);
-        playerX = JSON.parse(myStorage.getItem('GamesX'));
+        playerX = player1.scoreTateti;
         console.log("gamesX: " + playerX);
-        playerO = JSON.parse(myStorage.getItem('GamesO'));
+        playerO = player2.scoreTateti;
         console.log("gamesO: " + playerO);
         array = JSON.parse(myStorage.getItem('Board'));
         console.log("array: " + array);
         //Update visual board according to logical board from localStorage
         loadVisualBoardFromStorage(array);
-        document.getElementById("gamesX").innerText = playerX;
+        document.getElementById("gamesX").innerText = player1.scoreTateti;
         document.getElementById("gamesO").innerText = playerO;
         setNames();
         

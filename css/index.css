@@ -360,7 +360,9 @@ h1 {
 
 .modifyImage {
 
-    position:relative;
+    left: 28vw;
+    left: 25 vw;
+    position: fixed;
 }
 
 .modifyImage button {
@@ -372,7 +374,7 @@ h1 {
 
 .playerPicture {
 
-    height: 45%;
+    height: 35%;
 }
 
 .playerForm {
